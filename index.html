@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html and CSS Cheatsheet</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&family=Source+Code+Pro&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;500&family=Source+Code+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 
 </head>
 
 <body>
     <header>
         <div class="wrapper">
-            <h1>Attribute Selectors</h1>
+            <h1><span class="breadcrumbs">CSS /</span> Attribute Selectors</h1>
             <p>Attribute selectors allow you to create rules that apply to elements that have an
                 attribute with a specific value.</p>
         </div>
@@ -29,74 +30,71 @@
                 <thead>
                     <tr>
                         <th scope="col">Selector</th>
-                        <th scope="col">Meaning</th>
+                        <th scope="col">Description</th>
                         <th scope="col">Example</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row"><b>Existence</b></th>
-                        <td><b>[]</b>
-                            <p>Matches a specific attribute (whatever its value</p>
-                        </td>
-                        <td><b>p[class]</b>
-                            <p>Targets any element with an attribute called class</p>
+                        <th scope="row"><code>[]</code></th>
+                        <td class="description">Matches a specific attribute (whatever its value)</td>
+                        <td>
+                            <div class="example">
+                                <code>p[class]</code>Targets any &lt;p&gt; element with an attribute called class
+                            </div>
                         </td>
                     </tr>
-
                     <tr>
-                        <th scope="row"><b>Equality</b></th>
-                        <td><b>[=]</b>
-                            <p>Matches a specific attribute with a specific value</p>
-                        </td>
-                        <td><b>p[class="dog"]</b>
-                            <p>Targets any element with an attribute called class whose value is dog</p>
+                        <th scope="row"><code>[=]</code></th>
+                        <td>Matches a specific attribute with a specific value</td>
+                        <td>
+                            <div class="example">
+                                <code>p[class="dog"]</code>Targets any &lt;p&gt; element with an
+                                attribute called class
+                                whose value is dog
+                            </div>
                         </td>
                     </tr>
-
                     <tr>
-                        <th scope="row"><b>Space</b></th>
-                        <td><b>[~=]</b>
-                            <p>Matches a specific attribute whose value appears in a space-separated list of words</p>
-                        </td>
-                        <td><b>p[class~="dog"]</b>
-                            <p>Targets any element with an attribute called class whose value is a list of
-                                space-separated words, one of which is dog</p>
+                        <th scope="row"><code>[~=]</code></th>
+                        <td>Matches a specific attribute whose value appears in a space-separated list of words</td>
+                        <td>
+                            <div class="example">
+                                <code>p[class~="dog"]</code>Targets any &lt;p&gt; element with an attribute called
+                                class whose value is a list of space-separated words, one of which is dog
+                            </div>
                         </td>
                     </tr>
-
                     <tr>
-                        <th scope="row"><b>Prefix</b></th>
-                        <td><b>[^=]</b>
-                            <p>Matches a specific attribute whose value begins with a specific string</p>
-                        </td>
-                        <td><b>p[attr^"d"]</b>
-                            <p>Targets any element with an attribute whose value begins with the letter "d"</p>
+                        <th scope="row"><code>[^=]</code></th>
+                        <td>Matches a specific attribute whose value begins with a specific string</td>
+                        <td>
+                            <div class="example">
+                                <code>p[attr^"d"]</code>Targets any &lt;p&gt; element with an attribute
+                                whose value begins with the letter "d"
+                            </div>
                         </td>
                     </tr>
-
                     <tr>
-                        <th scope="row"><b>Substring</b></th>
-                        <td><b>[*=]</b>
-                            <p>Matches a specific attribute whose value contains a specific substring</p>
-                        </td>
-                        <td><b>p[attr*"do"]</b>
-                            <p>Targets any element with an attribute whose value contains the letters "do"</p>
+                        <th scope="row"><code>[*=]</code></th>
+                        <td>Matches a specific attribute whose value contains a specific substring</td>
+                        <td>
+                            <div class="example">
+                                <code>p[attr*"do"]</code>Targets any &lt;p&gt; element with an attribute
+                                whose value contains the letters "do"
+                            </div>
                         </td>
                     </tr>
-
                     <tr>
-                        <th scope="row"><b>Suffix</b></th>
-                        <td><b>[$=]</b>
-                            <p>Matches a specific attribute whose value ends with a specific string</p>
-                        </td>
-                        <td><b>p[attr$"g"]</b>
-                            <p>Targets any element with an attribute whose value ends with the letter "g"</p>
+                        <th scope="row"><code>[$=]</code></th>
+                        <td>Matches a specific attribute whose value ends with a specific string</td>
+                        <td>
+                            <div class="example">
+                                <code>p[attr$"g"]</code>Targets any &lt;p&gt; element with an attribute
+                                whose value ends with the letter "g"
+                            </div>
                         </td>
                     </tr>
-
-
-
                 </tbody>
             </table>
         </div>
@@ -104,7 +102,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <p>Copyright © 2021 Interface Jam. All Rights Reserved.</p>
+            <div class="left">Interface Jam 2021</div>
+            <div class="right">
+                <p>Do you see something missing? <a href="#">Request a cheatsheet</a></p>
+            </div>
         </div>
     </footer>
 </body>
