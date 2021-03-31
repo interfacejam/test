@@ -1,1 +1,88 @@
 
+body {
+    background-color: whitesmoke;
+}
+
+.wrapper {
+    margin: 0 auto 0 auto;
+    max-width: 1024px;
+    background-color: white;
+    padding: 32px;
+}
+
+
+h1 {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 24px 0;
+    color: black;
+}
+
+header p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 96px;
+    color: dimgray;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    font-family: 'Open Sans';
+    table-layout: fixed;
+}
+
+thead th {
+    border-bottom: 2px solid black;
+    padding: 4px 8px 4px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+tbody th {
+    text-transform: uppercase;
+}
+
+tbody th,
+tbody td {
+    vertical-align: top;
+    border-bottom: 1px dotted black;
+    padding: 16px 8px 0 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+tr b {
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    color: deeppink;
+}
+
+td p {
+    font-size: 12px;
+    padding: 12px 0;
+    color: dimgray;
+    line-height: 1.6;
+}
+
+tbody>tr:last-child th,
+tbody>tr:last-child td {
+    border-bottom: none;
+}
+
+footer .wrapper {
+    background-color: gainsboro;
+}
+
+footer p {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: dimgray;
+}
