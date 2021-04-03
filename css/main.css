@@ -138,7 +138,7 @@ footer a {
         padding: 26px 16px;
     }
 
-    footer .feedback{
+    .feedback span{
         display: none;
     }
 
