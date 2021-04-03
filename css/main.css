@@ -105,12 +105,12 @@ footer .wrapper {
     height: 64px;
 }
 
-footer .left {
+footer .copy {
     float: left;
     font-weight: 700;
 }
 
-footer .right {
+footer .feedback {
     float: right;
 }
 
@@ -138,7 +138,7 @@ footer a {
         padding: 26px 16px;
     }
 
-    footer .right{
+    footer .feedback{
         display: none;
     }
 
